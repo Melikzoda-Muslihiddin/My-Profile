@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>melikow.dev — Junior Frontend Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <div class="progress-bar" id="progressBar"></div>
+
+    <header class="navbar" id="navbar">
+        <div class="container navbar__inner">
+            <a class="brand" href="#home">
+                <img src="./photo_2026-03-24_09-43-39.jpg" class="brand__logo" alt="">
+                <span>melikow.dev</span>
+            </a>
+
+            <nav class="nav-links" id="desktopNav">
+                <a href="#services" data-i18n="navServices">Services</a>
+                <a href="#projects" data-i18n="navProjects">Projects</a>
+                <a href="#skills" data-i18n="navSkills">Skills</a>
+                <a href="#about" data-i18n="navAbout">About</a>
+                <a href="#faq" data-i18n="navFaq">FAQ</a>
+                <a href="#contact" data-i18n="navContact">Contact</a>
+            </nav>
+
+            <div class="top-actions">
+                <button type="button" class="lang-btn active" data-lang="en">EN</button>
+                <button type="button" class="lang-btn" data-lang="ru">RU</button>
+                <button type="button" class="lang-btn" data-lang="tj">TJ</button>
+                <button type="button" class="theme-btn chip-btn" id="themeToggle">🌙 Dark</button>
+                <button type="button" class="burger" id="burger">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-panel" id="mobilePanel">
+        <a href="#services" data-i18n="navServices">Services</a>
+        <a href="#projects" data-i18n="navProjects">Projects</a>
+        <a href="#skills" data-i18n="navSkills">Skills</a>
+        <a href="#about" data-i18n="navAbout">About</a>
+        <a href="#faq" data-i18n="navFaq">FAQ</a>
+        <a href="#contact" data-i18n="navContact">Contact</a>
+    </div>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="container hero__grid">
+                <div class="reveal">
+                    <div class="eyebrow" data-i18n="eyebrow">✦ Junior Frontend Developer • React • TypeScript • UI</div>
+                    <h1 data-i18n="heroTitle"><span class="gradient-text">Modern web interfaces</span> with a strong
+                        portfolio style.</h1>
+                    <p data-i18n="heroText">I am Muslihiddin Melikzoda — a junior frontend developer from Dushanbe,
+                        Tajikistan. I build clean interfaces, study seriously, and grow through real projects in HTML,
+                        CSS, JavaScript, React, and TypeScript.</p>
+
+                    <div class="hero__actions">
+                        <a class="btn btn--primary magnetic" href="#projects" data-i18n="viewProjects">View Projects</a>
+                        <a class="btn btn--secondary" href="#contact" data-i18n="contactMe">Contact Me</a>
+                    </div>
+
+                    <div class="hero__stats">
+                        <div class="stat counter-card reveal">
+                            <strong><span class="counter" data-target="2">0</span>+</strong>
+                            <span data-i18n="stat1Text">Featured public projects</span>
+                        </div>
+                        <div class="stat counter-card reveal">
+                            <strong><span class="counter" data-target="3">0</span></strong>
+                            <span data-i18n="stat2Text">Languages on the website</span>
+                        </div>
+                        <div class="stat counter-card reveal">
+                            <strong><span class="counter" data-target="2">0</span></strong>
+                            <span data-i18n="stat3Text">Theme modes: dark and light</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual reveal reveal-right">
+                    <div class="hero-visual__image">
+                        <div class="floating-card floating">
+                            <div class="floating-card__top">
+                                <div>
+                                    <strong data-i18n="floatingTitle">Developer Snapshot</strong>
+                                    <span data-i18n="floatingSub">Current portfolio with multilingual UI</span>
+                                </div>
+                                <span class="badge">2026</span>
+                            </div>
+                            <div class="mini-list">
+                                <div class="mini-item">
+                                    <span data-i18n="mini1Left">Frontend portfolio</span>
+                                    <strong>HTML</strong>
+                                </div>
+                                <div class="mini-item">
+                                    <span data-i18n="mini2Left">Responsive sections</span>
+                                    <strong>CSS</strong>
+                                </div>
+                                <div class="mini-item">
+                                    <span data-i18n="mini3Left">Real interactivity</span>
+                                    <strong>JS</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="services">
+            <div class="container">
+                <div class="section__head reveal">
+                    <div>
+                        <h2 data-i18n="servicesTitle">What this website includes</h2>
+                        <p data-i18n="servicesText">A modern developer portfolio with actual UI patterns, animations,
+                            theme switching, translations, project filtering, FAQ, modal preview, and contact form
+                            validation.</p>
+                    </div>
+                </div>
+
+                <div class="grid-3">
+                    <article class="card reveal stagger-item">
+                        <div class="icon">⚡</div>
+                        <h3 data-i18n="service1Title">Premium first screen</h3>
+                        <p data-i18n="service1Text">Strong hero section with portfolio positioning and clean visual
+                            hierarchy.</p>
+                    </article>
+                    <article class="card reveal stagger-item">
+                        <div class="icon">🌐</div>
+                        <h3 data-i18n="service2Title">3-language support</h3>
+                        <p data-i18n="service2Text">English, Russian, and Tajik with instant switching.</p>
+                    </article>
+                    <article class="card reveal stagger-item">
+                        <div class="icon">🧠</div>
+                        <h3 data-i18n="service3Title">Modern JavaScript logic</h3>
+                        <p data-i18n="service3Text">Scroll progress, counters, reveal effects, filters, modal, FAQ, and
+                            validation.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="projects">
+            <div class="container">
+                <div class="section__head reveal">
+                    <div>
+                        <h2 data-i18n="projectsTitle">Featured projects</h2>
+                        <p data-i18n="projectsText">Projects are rendered from JavaScript and can be filtered by stack.
+                        </p>
+                    </div>
+                    <div class="filters" id="projectFilters">
+                        <button class="filter-btn active" data-filter="all">All</button>
+                        <button class="filter-btn" data-filter="html">HTML/CSS</button>
+                        <button class="filter-btn" data-filter="javascript">JavaScript</button>
+                        <button class="filter-btn" data-filter="react">React</button>
+                    </div>
+                </div>
+
+                <div class="portfolio-grid" id="projectsGrid"></div>
+            </div>
+        </section>
+
+        <section class="section" id="skills">
+            <div class="container">
+                <div class="section__head reveal">
+                    <div>
+                        <h2 data-i18n="skillsTitle">Stack & skills</h2>
+                        <p data-i18n="skillsText">A practical stack focused on frontend growth, UI building, and real
+                            projects.</p>
+                    </div>
+                </div>
+
+                <div class="skills-grid">
+                    <div class="card reveal">
+                        <h3>Frontend</h3>
+                        <div class="skill-bars">
+                            <div class="skill">
+                                <div class="skill-top"><span>HTML</span><span>90%</span></div>
+                                <div class="bar"><span data-width="90%"></span></div>
+                            </div>
+                            <div class="skill">
+                                <div class="skill-top"><span>CSS</span><span>85%</span></div>
+                                <div class="bar"><span data-width="85%"></span></div>
+                            </div>
+                            <div class="skill">
+                                <div class="skill-top"><span>JavaScript</span><span>75%</span></div>
+                                <div class="bar"><span data-width="75%"></span></div>
+                            </div>
+                            <div class="skill">
+                                <div class="skill-top"><span>React</span><span>60%</span></div>
+                                <div class="bar"><span data-width="60%"></span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card reveal reveal-right">
+                        <h3 data-i18n="toolsTitle">Tools & workflow</h3>
+                        <div class="chip-list">
+                            <span>TypeScript</span>
+                            <span>Tailwind CSS</span>
+                            <span>Git & GitHub</span>
+                            <span>JSON Server</span>
+                            <span>Figma</span>
+                            <span>VS Code</span>
+                            <span>Responsive Design</span>
+                            <span>UI Layout</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="about">
+            <div class="container about-grid">
+                <article class="card profile-card reveal">
+                    <div class="avatar avatar-icon">
+                        <span>👨‍💻</span>
+                    </div>
+                    <h3>Muslihiddin Melikzoda</h3>
+                    <small>@melikow.dev</small>
+                    <p data-i18n="aboutProfileText">A junior frontend developer and second-year university student in
+                        Dushanbe, serious about growth, discipline, and real technical progress.</p>
+                    <div class="socials">
+                        <a href="mailto:muslimmelikzoda@gmail.com">Email</a>
+                        <a href="https://t.me/mel1kow" target="_blank">Telegram</a>
+                        <a href="https://github.com/Melikzoda-Muslihiddin" target="_blank">GitHub</a>
+                    </div>
+                </article>
+
+                <div class="timeline">
+                    <article class="timeline-item reveal stagger-item">
+                        <strong>01</strong>
+                        <div>
+                            <h4 data-i18n="step1Title">Education & discipline</h4>
+                            <p data-i18n="step1Text">I study at the International University of Tourism and
+                                Entrepreneurship of Tajikistan, Institute of Digital Technologies and AI, majoring in
+                                Software Engineering.</p>
+                        </div>
+                    </article>
+                    <article class="timeline-item reveal stagger-item">
+                        <strong>02</strong>
+                        <div>
+                            <h4 data-i18n="step2Title">Strong learning mindset</h4>
+                            <p data-i18n="step2Text">I finished school with distinction, entered university on a budget
+                                scholarship, and continue studying with strong academic performance.</p>
+                        </div>
+                    </article>
+                    <article class="timeline-item reveal stagger-item">
+                        <strong>03</strong>
+                        <div>
+                            <h4 data-i18n="step3Title">Career direction</h4>
+                            <p data-i18n="step3Text">I take difficult tasks seriously and especially enjoy challenges
+                                connected to frontend development and software engineering.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="faq">
+            <div class="container">
+                <div class="section__head reveal">
+                    <div>
+                        <h2 data-i18n="faqTitle">FAQ</h2>
+                        <p data-i18n="faqText">A simple accordion built with JavaScript to make the site feel more
+                            complete and interactive.</p>
+                    </div>
+                </div>
+
+                <div class="faq-list">
+                    <div class="faq-item reveal">
+                        <button class="faq-trigger">
+                            <span data-i18n="faq1Q">What kind of projects do you build?</span>
+                            <span>+</span>
+                        </button>
+                        <div class="faq-content">
+                            <p data-i18n="faq1A">I build portfolio websites, UI pages, dashboard layouts, and practice
+                                projects using HTML, CSS, JavaScript, React, and TypeScript.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item reveal">
+                        <button class="faq-trigger">
+                            <span data-i18n="faq2Q">Are you available for collaboration?</span>
+                            <span>+</span>
+                        </button>
+                        <div class="faq-content">
+                            <p data-i18n="faq2A">Yes. I am open to learning opportunities, collaborations, internships,
+                                and junior frontend work.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item reveal">
+                        <button class="faq-trigger">
+                            <span data-i18n="faq3Q">Why does this portfolio have multiple languages?</span>
+                            <span>+</span>
+                        </button>
+                        <div class="faq-content">
+                            <p data-i18n="faq3A">It shows localization skills and makes the website more useful for
+                                different audiences.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="contact">
+            <div class="container">
+                <div class="cta-box reveal">
+                    <div>
+                        <h2 data-i18n="ctaTitle">Let’s build something strong</h2>
+                        <p data-i18n="ctaText">Send me a message if you want to discuss a project, collaboration,
+                            internship, or frontend opportunity.</p>
+                    </div>
+                    <form class="contact-form" id="contactForm" novalidate>
+                        <input type="text" id="nameInput" placeholder="Your name" />
+                        <input type="email" id="emailInput" placeholder="Your email" />
+                        <textarea id="messageInput" rows="4" placeholder="Your message"></textarea>
+                        <button class="btn btn--primary" type="submit" data-i18n="sendMessage">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-inner">
+            <span data-i18n="footerLeft">© 2026 melikow.dev — modern multilingual frontend portfolio</span>
+            <span data-i18n="footerRight">Built with HTML, CSS, and JavaScript</span>
+        </div>
+    </footer>
+
+    <div class="modal" id="projectModal">
+        <div class="modal__overlay" id="modalOverlay"></div>
+        <div class="modal__dialog">
+            <button class="modal__close" id="modalClose">✕</button>
+            <img id="modalImage" src="" alt="Project preview" />
+            <div class="modal__body">
+                <h3 id="modalTitle"></h3>
+                <p id="modalDescription"></p>
+                <div class="chip-list" id="modalTags"></div>
+                <a id="modalLink" class="btn btn--primary" href="#" target="_blank">Open GitHub</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="toast-container" id="toastContainer"></div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
