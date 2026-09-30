@@ -1,5 +1,5 @@
 /* ============================================================
-   melikow.dev — Developer / Terminal portfolio
+   melikow.dev — Developer / Terminal + Design portfolio
    ============================================================ */
 
 :root {
@@ -21,9 +21,9 @@
   --radius: 14px;
   --radius-sm: 10px;
   --max: 1180px;
-  --mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
-  --sans: "Inter", ui-sans-serif, system-ui, sans-serif;
-  --display: "Syne", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --mono: var(--font-mono), "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  --sans: var(--font-sans), "Inter", ui-sans-serif, system-ui, sans-serif;
+  --display: var(--font-display), var(--font-sans), "Inter", ui-sans-serif, system-ui, sans-serif;
 
   /* design world palette (shared across dark/light) */
   --d-hot: #f472b6; /* pink */
@@ -176,6 +176,7 @@ textarea {
   color: var(--muted);
   transition: 0.2s ease;
   position: relative;
+  cursor: pointer;
 }
 .nav-links a::before {
   content: "/";
@@ -887,7 +888,7 @@ h4 {
   padding: 0 20px;
 }
 .faq-item.open .faq-content {
-  max-height: 220px;
+  max-height: 240px;
   padding: 0 20px 18px;
 }
 .faq-content p {

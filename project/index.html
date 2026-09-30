@@ -4,12 +4,79 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>melikow.dev — Junior Frontend Developer</title>
+
+    <!-- ===================== SEO ===================== -->
+    <title>Muslihiddin Melikzoda — Fullstack Developer &amp; Designer | melikow.dev</title>
+    <meta name="description"
+        content="Muslihiddin Melikzoda (melikow) — Fullstack Developer &amp; Design Mentor from Dushanbe, Tajikistan. Next.js, React, TypeScript, C++, Prisma — and design in Photoshop, Illustrator, After Effects, Figma, Blender. Design mentor at Academy SoftClub. Creator of Tuyona.tj." />
+    <meta name="keywords"
+        content="Muslihiddin Melikzoda, melikow, melikow.dev, fullstack developer Tajikistan, frontend developer Dushanbe, Next.js developer, React TypeScript developer, C++ developer, UI UX designer Tajikistan, graphic designer Dushanbe, Photoshop, Illustrator, CorelDRAW, After Effects, Figma, Blender, design mentor, SoftClub, Tuyona.tj, веб-разработчик Душанбе, дизайнер Таджикистан" />
+    <meta name="author" content="Muslihiddin Melikzoda" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <link rel="canonical" href="https://melikow.dev/" />
+    <meta name="theme-color" content="#0a0e16" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="melikow.dev" />
+    <meta property="og:title" content="Muslihiddin Melikzoda — Fullstack Developer &amp; Designer" />
+    <meta property="og:description"
+        content="Fullstack Developer &amp; Design Mentor from Dushanbe, Tajikistan. Code with Next.js, React, TypeScript, C++ — and design in Photoshop, Illustrator, After Effects, Figma, Blender." />
+    <meta property="og:url" content="https://melikow.dev/" />
+    <meta property="og:image" content="https://melikow.dev/photo_2026-03-24_09-43-39.jpg" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="ru_RU" />
+    <meta property="og:locale:alternate" content="tg_TJ" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Muslihiddin Melikzoda — Fullstack Developer &amp; Designer" />
+    <meta name="twitter:description"
+        content="Fullstack Developer &amp; Design Mentor from Dushanbe, Tajikistan. Code + Design under one roof." />
+    <meta name="twitter:image" content="https://melikow.dev/photo_2026-03-24_09-43-39.jpg" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap"
         rel="stylesheet" />
     <link rel="stylesheet" href="./style.css" />
+
+    <!-- ===================== Structured Data (JSON-LD) ===================== -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Muslihiddin Melikzoda",
+      "alternateName": "melikow",
+      "url": "https://melikow.dev/",
+      "image": "https://melikow.dev/photo_2026-03-24_09-43-39.jpg",
+      "jobTitle": "Fullstack Developer & Design Mentor",
+      "email": "mailto:muslimmelikzoda@gmail.com",
+      "telephone": "+992003333991",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Academy SoftClub",
+        "description": "Design mentor and frontend developer at Academy SoftClub, Dushanbe."
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Dushanbe",
+        "addressCountry": "TJ"
+      },
+      "knowsAbout": [
+        "Fullstack Development", "Frontend Development", "Next.js", "React",
+        "TypeScript", "JavaScript", "C++", "Node.js", "Prisma", "PostgreSQL",
+        "UI/UX Design", "Graphic Design", "Branding", "Photoshop", "Illustrator",
+        "CorelDRAW", "Adobe After Effects", "Figma", "Blender", "Canva"
+      ],
+      "sameAs": [
+        "https://github.com/Melikzoda-Muslihiddin",
+        "https://t.me/MuslihiddinMelikzoda",
+        "https://instagram.com/mel1kow.l8",
+        "https://wa.me/992003333991"
+      ]
+    }
+    </script>
 </head>
 
 <body>
@@ -18,145 +85,261 @@
     <header class="navbar" id="navbar">
         <div class="container navbar__inner">
             <a class="brand" href="#home">
-                <img src="./photo_2026-03-24_09-43-39.jpg" class="brand__logo" alt="">
-                <span>melikow.dev</span>
+                <img src="./photo_2026-03-24_09-43-39.jpg" class="brand__logo" alt="Muslihiddin Melikzoda — portrait" />
+                <span class="brand__name">melikow<span class="brand__dot">.</span>dev</span>
             </a>
 
-            <nav class="nav-links" id="desktopNav">
-                <a href="#services" data-i18n="navServices">Services</a>
-                <a href="#projects" data-i18n="navProjects">Projects</a>
-                <a href="#skills" data-i18n="navSkills">Skills</a>
-                <a href="#about" data-i18n="navAbout">About</a>
-                <a href="#faq" data-i18n="navFaq">FAQ</a>
-                <a href="#contact" data-i18n="navContact">Contact</a>
+            <nav class="nav-links" id="desktopNav" aria-label="Primary">
+                <a href="#about" data-i18n="navAbout">about</a>
+                <a href="#skills" data-i18n="navSkills">skills</a>
+                <a href="#projects" data-i18n="navProjects">projects</a>
+                <a href="#design" class="nav-design" data-i18n="navDesign">design</a>
+                <a href="#faq" data-i18n="navFaq">faq</a>
+                <a href="#contact" data-i18n="navContact">contact</a>
             </nav>
 
             <div class="top-actions">
-                <button type="button" class="lang-btn active" data-lang="en">EN</button>
-                <button type="button" class="lang-btn" data-lang="ru">RU</button>
-                <button type="button" class="lang-btn" data-lang="tj">TJ</button>
-                <button type="button" class="theme-btn chip-btn" id="themeToggle">🌙 Dark</button>
-                <button type="button" class="burger" id="burger">☰</button>
+                <div class="lang-switch">
+                    <button type="button" class="lang-btn active" data-lang="en">EN</button>
+                    <button type="button" class="lang-btn" data-lang="ru">RU</button>
+                    <button type="button" class="lang-btn" data-lang="tj">TJ</button>
+                </div>
+                <button type="button" class="theme-btn" id="themeToggle" aria-label="Toggle theme">
+                    <span id="themeIcon">◐</span>
+                </button>
+                <button type="button" class="burger" id="burger" aria-label="Menu">☰</button>
             </div>
         </div>
     </header>
 
     <div class="mobile-panel" id="mobilePanel">
-        <a href="#services" data-i18n="navServices">Services</a>
-        <a href="#projects" data-i18n="navProjects">Projects</a>
-        <a href="#skills" data-i18n="navSkills">Skills</a>
-        <a href="#about" data-i18n="navAbout">About</a>
-        <a href="#faq" data-i18n="navFaq">FAQ</a>
-        <a href="#contact" data-i18n="navContact">Contact</a>
+        <a href="#about" data-i18n="navAbout">about</a>
+        <a href="#skills" data-i18n="navSkills">skills</a>
+        <a href="#projects" data-i18n="navProjects">projects</a>
+        <a href="#design" data-i18n="navDesign">design</a>
+        <a href="#faq" data-i18n="navFaq">faq</a>
+        <a href="#contact" data-i18n="navContact">contact</a>
     </div>
 
     <main>
+        <!-- =========================================================
+             DEV WORLD
+        ========================================================== -->
+
+        <!-- HERO -->
         <section class="hero" id="home">
             <div class="container hero__grid">
-                <div class="reveal">
-                    <div class="eyebrow" data-i18n="eyebrow">✦ Junior Frontend Developer • React • TypeScript • UI</div>
-                    <h1 data-i18n="heroTitle"><span class="gradient-text">Modern web interfaces</span> with a strong
-                        portfolio style.</h1>
-                    <p data-i18n="heroText">I am Muslihiddin Melikzoda — a junior frontend developer from Dushanbe,
-                        Tajikistan. I build clean interfaces, study seriously, and grow through real projects in HTML,
-                        CSS, JavaScript, React, and TypeScript.</p>
+                <div class="hero__left reveal">
+                    <div class="eyebrow">
+                        <span class="status-dot"></span>
+                        <span data-i18n="eyebrow">fullstack developer · design mentor · open to work</span>
+                    </div>
+
+                    <h1 class="hero__title">
+                        <span class="mono prompt">muslihiddin@dev</span><span class="mono path"> ~ %</span>
+                        <span class="typed-line"><span id="typed"></span><span class="caret">█</span></span>
+                    </h1>
+
+                    <p class="hero__lead" data-i18n="heroText">
+                        I'm <strong>Muslihiddin Melikzoda</strong> — a fullstack developer and design mentor from
+                        Dushanbe, Tajikistan. I build production web apps with Next.js, React, TypeScript &amp; C++ —
+                        and design the brand and UI behind them.
+                    </p>
 
                     <div class="hero__actions">
-                        <a class="btn btn--primary magnetic" href="#projects" data-i18n="viewProjects">View Projects</a>
-                        <a class="btn btn--secondary" href="#contact" data-i18n="contactMe">Contact Me</a>
+                        <a class="btn btn--primary" href="#projects" data-i18n="viewProjects">view projects</a>
+                        <a class="btn btn--ghost" href="#design" data-i18n="viewDesign">see design work</a>
+                        <a class="btn btn--ghost" href="#contact" data-i18n="contactMe">contact</a>
                     </div>
 
                     <div class="hero__stats">
-                        <div class="stat counter-card reveal">
-                            <strong><span class="counter" data-target="2">0</span>+</strong>
-                            <span data-i18n="stat1Text">Featured public projects</span>
+                        <div class="stat">
+                            <strong class="mono"><span class="counter" data-target="40">0</span>+</strong>
+                            <span data-i18n="stat1Text">public repositories</span>
                         </div>
-                        <div class="stat counter-card reveal">
-                            <strong><span class="counter" data-target="3">0</span></strong>
-                            <span data-i18n="stat2Text">Languages on the website</span>
+                        <div class="stat">
+                            <strong class="mono"><span class="counter" data-target="8">0</span>+</strong>
+                            <span data-i18n="stat2Text">design tools mastered</span>
                         </div>
-                        <div class="stat counter-card reveal">
-                            <strong><span class="counter" data-target="2">0</span></strong>
-                            <span data-i18n="stat3Text">Theme modes: dark and light</span>
+                        <div class="stat">
+                            <strong class="mono">∞</strong>
+                            <span data-i18n="stat3Text">code &amp; design combined</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="hero-visual reveal reveal-right">
-                    <div class="hero-visual__image">
-                        <div class="floating-card floating">
-                            <div class="floating-card__top">
-                                <div>
-                                    <strong data-i18n="floatingTitle">Developer Snapshot</strong>
-                                    <span data-i18n="floatingSub">Current portfolio with multilingual UI</span>
-                                </div>
-                                <span class="badge">2026</span>
-                            </div>
-                            <div class="mini-list">
-                                <div class="mini-item">
-                                    <span data-i18n="mini1Left">Frontend portfolio</span>
-                                    <strong>HTML</strong>
-                                </div>
-                                <div class="mini-item">
-                                    <span data-i18n="mini2Left">Responsive sections</span>
-                                    <strong>CSS</strong>
-                                </div>
-                                <div class="mini-item">
-                                    <span data-i18n="mini3Left">Real interactivity</span>
-                                    <strong>JS</strong>
-                                </div>
-                            </div>
+                <div class="hero__right reveal reveal-right">
+                    <div class="terminal floating">
+                        <div class="terminal__bar">
+                            <span class="dot dot--red"></span>
+                            <span class="dot dot--yellow"></span>
+                            <span class="dot dot--green"></span>
+                            <span class="terminal__title mono">muslihiddin — bash</span>
+                        </div>
+                        <div class="terminal__body mono">
+                            <p><span class="t-prompt">$</span> whoami</p>
+                            <p class="t-out">Muslihiddin Melikzoda</p>
+                            <p><span class="t-prompt">$</span> cat role.txt</p>
+                            <p class="t-out">Fullstack Dev · UI/UX Designer · Mentor</p>
+                            <p><span class="t-prompt">$</span> ls ./stack</p>
+                            <p class="t-out">next.js react typescript c++ node prisma</p>
+                            <p><span class="t-prompt">$</span> cat flagship.txt</p>
+                            <p class="t-out">Tuyona.tj — wedding marketplace 💍</p>
+                            <p><span class="t-prompt">$</span> cat now.txt</p>
+                            <p class="t-out">design mentor @ Academy SoftClub</p>
+                            <p><span class="t-prompt">$</span> status</p>
+                            <p class="t-out t-ok">● open to opportunities</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="section" id="services">
+
+        <!-- ABOUT -->
+        <section class="section" id="about">
             <div class="container">
                 <div class="section__head reveal">
-                    <div>
-                        <h2 data-i18n="servicesTitle">What this website includes</h2>
-                        <p data-i18n="servicesText">A modern developer portfolio with actual UI patterns, animations,
-                            theme switching, translations, project filtering, FAQ, modal preview, and contact form
-                            validation.</p>
-                    </div>
+                    <span class="section__index mono">// 01</span>
+                    <h2 data-i18n="aboutTitle">about me</h2>
                 </div>
 
-                <div class="grid-3">
-                    <article class="card reveal stagger-item">
-                        <div class="icon">⚡</div>
-                        <h3 data-i18n="service1Title">Premium first screen</h3>
-                        <p data-i18n="service1Text">Strong hero section with portfolio positioning and clean visual
-                            hierarchy.</p>
+                <div class="about-grid">
+                    <article class="card profile-card reveal">
+                        <img class="profile-card__photo" src="./photo_2026-03-24_09-43-39.jpg"
+                            alt="Muslihiddin Melikzoda — Fullstack Developer and Designer" />
+                        <h3>Muslihiddin Melikzoda</h3>
+                        <small class="mono">@mel1kow · Dushanbe, TJ</small>
+                        <div class="socials">
+                            <a href="mailto:muslimmelikzoda@gmail.com">email</a>
+                            <a href="https://t.me/MuslihiddinMelikzoda" target="_blank" rel="noopener">telegram</a>
+                            <a href="https://github.com/Melikzoda-Muslihiddin" target="_blank"
+                                rel="noopener">github</a>
+                        </div>
                     </article>
-                    <article class="card reveal stagger-item">
-                        <div class="icon">🌐</div>
-                        <h3 data-i18n="service2Title">3-language support</h3>
-                        <p data-i18n="service2Text">English, Russian, and Tajik with instant switching.</p>
-                    </article>
-                    <article class="card reveal stagger-item">
-                        <div class="icon">🧠</div>
-                        <h3 data-i18n="service3Title">Modern JavaScript logic</h3>
-                        <p data-i18n="service3Text">Scroll progress, counters, reveal effects, filters, modal, FAQ, and
-                            validation.</p>
-                    </article>
+
+                    <div class="about-text reveal reveal-right">
+                        <p data-i18n="aboutP1">
+                            I'm a fullstack developer and a design mentor — I live in both worlds. I build complete
+                            products end to end, from database and backend to a polished frontend, and I design the
+                            brand identity and UI that wrap around them.
+                        </p>
+                        <p data-i18n="aboutP2">
+                            My flagship is Tuyona.tj, a production wedding marketplace for Tajikistan built on Next.js,
+                            TypeScript, Prisma and PostgreSQL. On the engineering side I also work with C++ and modern
+                            React state management; on the design side I work daily in Photoshop, Illustrator, After
+                            Effects, Figma and Blender.
+                        </p>
+                        <p data-i18n="aboutP3">
+                            Right now I work as a design mentor and frontend developer at Academy SoftClub in Dushanbe,
+                            teaching design while shipping real interfaces. I'm open to fullstack roles, design projects
+                            and collaborations.
+                        </p>
+
+                        <div class="info-grid mono">
+                            <div class="info-row"><span class="info-key">role</span><span
+                                    class="info-val">Fullstack Dev · Designer · Mentor</span></div>
+                            <div class="info-row"><span class="info-key">based</span><span class="info-val">Dushanbe,
+                                    Tajikistan</span></div>
+                            <div class="info-row"><span class="info-key">now</span><span class="info-val">Academy
+                                    SoftClub</span></div>
+                            <div class="info-row"><span class="info-key">flagship</span><span
+                                    class="info-val">Tuyona.tj</span></div>
+                            <div class="info-row"><span class="info-key">status</span><span class="info-val info-ok">●
+                                    open to work</span></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
+        <!-- SKILLS -->
+        <section class="section" id="skills">
+            <div class="container">
+                <div class="section__head reveal">
+                    <span class="section__index mono">// 02</span>
+                    <h2 data-i18n="skillsTitle">skills &amp; stack</h2>
+                </div>
+                <p class="section__lead reveal" data-i18n="skillsText">
+                    The engineering side — the tools I use to build products, grouped by how confident I am with each.
+                </p>
+
+                <div class="skills-grid">
+                    <article class="card skill-group reveal stagger-item">
+                        <h3 class="mono"><span class="t-prompt">#</span> frontend</h3>
+                        <ul class="skill-list">
+                            <li><span>HTML / CSS</span><span class="lvl lvl--strong"
+                                    data-i18n="lvlConfident">confident</span></li>
+                            <li><span>JavaScript (ES6+)</span><span class="lvl lvl--strong"
+                                    data-i18n="lvlConfident">confident</span></li>
+                            <li><span>TypeScript</span><span class="lvl lvl--strong"
+                                    data-i18n="lvlConfident">confident</span></li>
+                            <li><span>Tailwind CSS</span><span class="lvl lvl--strong"
+                                    data-i18n="lvlConfident">confident</span></li>
+                        </ul>
+                    </article>
+
+                    <article class="card skill-group reveal stagger-item">
+                        <h3 class="mono"><span class="t-prompt">#</span> frameworks &amp; state</h3>
+                        <ul class="skill-list">
+                            <li><span>React</span><span class="lvl lvl--strong"
+                                    data-i18n="lvlConfident">confident</span></li>
+                            <li><span>Next.js (App Router)</span><span class="lvl lvl--strong"
+                                    data-i18n="lvlConfident">confident</span></li>
+                            <li><span>Redux / Zustand</span><span class="lvl lvl--strong"
+                                    data-i18n="lvlConfident">confident</span></li>
+                            <li><span>shadcn/ui</span><span class="lvl lvl--mid"
+                                    data-i18n="lvlComfortable">comfortable</span></li>
+                        </ul>
+                    </article>
+
+                    <article class="card skill-group reveal stagger-item">
+                        <h3 class="mono"><span class="t-prompt">#</span> backend &amp; languages</h3>
+                        <ul class="skill-list">
+                            <li><span>Node.js / API Routes</span><span class="lvl lvl--mid"
+                                    data-i18n="lvlComfortable">comfortable</span></li>
+                            <li><span>Prisma · PostgreSQL</span><span class="lvl lvl--mid"
+                                    data-i18n="lvlComfortable">comfortable</span></li>
+                            <li><span>C++</span><span class="lvl lvl--mid"
+                                    data-i18n="lvlComfortable">comfortable</span></li>
+                            <li><span>NextAuth / Auth</span><span class="lvl lvl--mid"
+                                    data-i18n="lvlComfortable">comfortable</span></li>
+                        </ul>
+                    </article>
+
+                    <article class="card skill-group reveal stagger-item">
+                        <h3 class="mono"><span class="t-prompt">#</span> tooling</h3>
+                        <ul class="skill-list">
+                            <li><span>Git / GitHub</span><span class="lvl lvl--strong"
+                                    data-i18n="lvlConfident">confident</span></li>
+                            <li><span>Vercel / Deploy</span><span class="lvl lvl--strong"
+                                    data-i18n="lvlConfident">confident</span></li>
+                            <li><span>REST APIs</span><span class="lvl lvl--strong"
+                                    data-i18n="lvlConfident">confident</span></li>
+                            <li><span>Responsive / a11y</span><span class="lvl lvl--strong"
+                                    data-i18n="lvlConfident">confident</span></li>
+                        </ul>
+                    </article>
+                </div>
+
+                <div class="chip-list reveal" id="techChips"></div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
         <section class="section" id="projects">
             <div class="container">
                 <div class="section__head reveal">
-                    <div>
-                        <h2 data-i18n="projectsTitle">Featured projects</h2>
-                        <p data-i18n="projectsText">Projects are rendered from JavaScript and can be filtered by stack.
-                        </p>
-                    </div>
+                    <span class="section__index mono">// 03</span>
+                    <h2 data-i18n="projectsTitle">featured projects</h2>
+                </div>
+                <div class="projects-top reveal">
+                    <p class="section__lead" data-i18n="projectsText">
+                        Selected engineering work from my GitHub. Filter by stack, click a card for details.
+                    </p>
                     <div class="filters" id="projectFilters">
-                        <button class="filter-btn active" data-filter="all">All</button>
-                        <button class="filter-btn" data-filter="html">HTML/CSS</button>
-                        <button class="filter-btn" data-filter="javascript">JavaScript</button>
-                        <button class="filter-btn" data-filter="react">React</button>
+                        <button class="filter-btn active" data-filter="all" data-i18n="filterAll">all</button>
+                        <button class="filter-btn" data-filter="fullstack">fullstack</button>
+                        <button class="filter-btn" data-filter="frontend">frontend</button>
                     </div>
                 </div>
 
@@ -164,160 +347,233 @@
             </div>
         </section>
 
-        <section class="section" id="skills">
+        <!-- EXPERIENCE / EDUCATION -->
+        <section class="section" id="experience">
             <div class="container">
                 <div class="section__head reveal">
-                    <div>
-                        <h2 data-i18n="skillsTitle">Stack & skills</h2>
-                        <p data-i18n="skillsText">A practical stack focused on frontend growth, UI building, and real
-                            projects.</p>
-                    </div>
+                    <span class="section__index mono">// 04</span>
+                    <h2 data-i18n="experienceTitle">education &amp; path</h2>
                 </div>
-
-                <div class="skills-grid">
-                    <div class="card reveal">
-                        <h3>Frontend</h3>
-                        <div class="skill-bars">
-                            <div class="skill">
-                                <div class="skill-top"><span>HTML</span><span>90%</span></div>
-                                <div class="bar"><span data-width="90%"></span></div>
-                            </div>
-                            <div class="skill">
-                                <div class="skill-top"><span>CSS</span><span>85%</span></div>
-                                <div class="bar"><span data-width="85%"></span></div>
-                            </div>
-                            <div class="skill">
-                                <div class="skill-top"><span>JavaScript</span><span>75%</span></div>
-                                <div class="bar"><span data-width="75%"></span></div>
-                            </div>
-                            <div class="skill">
-                                <div class="skill-top"><span>React</span><span>60%</span></div>
-                                <div class="bar"><span data-width="60%"></span></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card reveal reveal-right">
-                        <h3 data-i18n="toolsTitle">Tools & workflow</h3>
-                        <div class="chip-list">
-                            <span>TypeScript</span>
-                            <span>Tailwind CSS</span>
-                            <span>Git & GitHub</span>
-                            <span>JSON Server</span>
-                            <span>Figma</span>
-                            <span>VS Code</span>
-                            <span>Responsive Design</span>
-                            <span>UI Layout</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="section" id="about">
-            <div class="container about-grid">
-                <article class="card profile-card reveal">
-                    <div class="avatar avatar-icon">
-                        <span>👨‍💻</span>
-                    </div>
-                    <h3>Muslihiddin Melikzoda</h3>
-                    <small>@melikow.dev</small>
-                    <p data-i18n="aboutProfileText">A junior frontend developer and second-year university student in
-                        Dushanbe, serious about growth, discipline, and real technical progress.</p>
-                    <div class="socials">
-                        <a href="mailto:muslimmelikzoda@gmail.com">Email</a>
-                        <a href="https://t.me/mel1kow" target="_blank">Telegram</a>
-                        <a href="https://github.com/Melikzoda-Muslihiddin" target="_blank">GitHub</a>
-                    </div>
-                </article>
 
                 <div class="timeline">
                     <article class="timeline-item reveal stagger-item">
-                        <strong>01</strong>
-                        <div>
-                            <h4 data-i18n="step1Title">Education & discipline</h4>
-                            <p data-i18n="step1Text">I study at the International University of Tourism and
-                                Entrepreneurship of Tajikistan, Institute of Digital Technologies and AI, majoring in
-                                Software Engineering.</p>
+                        <span class="timeline-year mono">now</span>
+                        <div class="timeline-body">
+                            <h4 data-i18n="step1Title">Design Mentor &amp; Frontend — Academy SoftClub</h4>
+                            <p data-i18n="step1Text">Mentoring students in design and building real frontend interfaces
+                                at Academy SoftClub in Dushanbe — teaching and shipping at the same time.</p>
                         </div>
                     </article>
                     <article class="timeline-item reveal stagger-item">
-                        <strong>02</strong>
-                        <div>
-                            <h4 data-i18n="step2Title">Strong learning mindset</h4>
-                            <p data-i18n="step2Text">I finished school with distinction, entered university on a budget
-                                scholarship, and continue studying with strong academic performance.</p>
+                        <span class="timeline-year mono">uni</span>
+                        <div class="timeline-body">
+                            <h4 data-i18n="step2Title">Software Engineering — University</h4>
+                            <p data-i18n="step2Text">Software Engineering student at the International University of
+                                Tourism and Entrepreneurship of Tajikistan (Institute of Digital Technologies &amp; AI),
+                                studying on a full scholarship.</p>
                         </div>
                     </article>
                     <article class="timeline-item reveal stagger-item">
-                        <strong>03</strong>
-                        <div>
-                            <h4 data-i18n="step3Title">Career direction</h4>
-                            <p data-i18n="step3Text">I take difficult tasks seriously and especially enjoy challenges
-                                connected to frontend development and software engineering.</p>
+                        <span class="timeline-year mono">2024+</span>
+                        <div class="timeline-body">
+                            <h4 data-i18n="step3Title">Fullstack &amp; design in production</h4>
+                            <p data-i18n="step3Text">Shipping production apps with Next.js, TypeScript, Prisma and C++ —
+                                like Tuyona.tj — while crafting brand identities in Photoshop, Illustrator and Figma.</p>
                         </div>
                     </article>
                 </div>
             </div>
         </section>
 
+        <!-- =========================================================
+             TRANSITION — dev world → design world
+        ========================================================== -->
+        <div class="world-switch" id="worldSwitch" aria-hidden="true">
+            <div class="container">
+                <p class="world-switch__code mono">
+                    <span class="t-prompt">$</span> <span data-i18n="switchCmd">compile --mode=design</span>
+                </p>
+                <div class="world-switch__line">
+                    <span class="world-switch__from mono" data-i18n="switchFrom">// end of engineering</span>
+                    <span class="world-switch__arrow">⟶</span>
+                    <span class="world-switch__to" data-i18n="switchTo">entering the design studio</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- =========================================================
+             DESIGN WORLD
+        ========================================================== -->
+        <div class="design-world">
+            <!-- DESIGN INTRO -->
+            <section class="d-section d-hero" id="design">
+                <div class="container">
+                    <div class="d-eyebrow reveal" data-i18n="designEyebrow">the other half — visual &amp; brand</div>
+                    <h2 class="d-title reveal" data-i18n="designTitle">I don't just build products.<br>I design how
+                        they feel.</h2>
+                    <p class="d-lead reveal" data-i18n="designLead">
+                        Trained as a designer before I wrote production code. Brand identity, UI/UX, print, motion and
+                        3D — I speak the visual language fluently and use it to make products people remember.
+                    </p>
+
+                    <div class="d-stats reveal">
+                        <div class="d-stat">
+                            <strong><span class="counter" data-target="6">0</span>+</strong>
+                            <span data-i18n="dStat1">years with design tools</span>
+                        </div>
+                        <div class="d-stat">
+                            <strong><span class="counter" data-target="8">0</span></strong>
+                            <span data-i18n="dStat2">creative tools in daily use</span>
+                        </div>
+                        <div class="d-stat">
+                            <strong data-i18n="dStat3Val">mentor</strong>
+                            <span data-i18n="dStat3">design @ Academy SoftClub</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- DESIGN TOOLS -->
+            <section class="d-section">
+                <div class="container">
+                    <h3 class="d-subtitle reveal" data-i18n="designToolsTitle">tools I create with</h3>
+                    <div class="d-tools" id="designTools"></div>
+                </div>
+            </section>
+
+            <!-- DESIGN WORKS -->
+            <section class="d-section">
+                <div class="container">
+                    <h3 class="d-subtitle reveal" data-i18n="designWorksTitle">selected design work</h3>
+                    <p class="d-works-lead reveal" data-i18n="designWorksLead">
+                        Branding, print and visual identity. Want the full portfolio? Just message me.
+                    </p>
+                    <div class="d-gallery" id="designGallery"></div>
+                </div>
+            </section>
+
+            <!-- MENTOR CALLOUT -->
+            <section class="d-section">
+                <div class="container">
+                    <div class="d-mentor reveal">
+                        <div class="d-mentor__badge" data-i18n="mentorBadge">now</div>
+                        <h3 data-i18n="mentorTitle">Design Mentor at Academy SoftClub</h3>
+                        <p data-i18n="mentorText">
+                            I teach the next generation of designers — from fundamentals and composition to real client
+                            work in Photoshop, Illustrator and Figma — while also building the academy's frontend. Two
+                            disciplines, one craft: making things that work and look great.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- =========================================================
+             SHARED — FAQ + CONTACT
+        ========================================================== -->
+
+        <!-- FAQ -->
         <section class="section" id="faq">
             <div class="container">
                 <div class="section__head reveal">
-                    <div>
-                        <h2 data-i18n="faqTitle">FAQ</h2>
-                        <p data-i18n="faqText">A simple accordion built with JavaScript to make the site feel more
-                            complete and interactive.</p>
-                    </div>
+                    <span class="section__index mono">// 05</span>
+                    <h2 data-i18n="faqTitle">faq</h2>
                 </div>
 
                 <div class="faq-list">
                     <div class="faq-item reveal">
-                        <button class="faq-trigger">
-                            <span data-i18n="faq1Q">What kind of projects do you build?</span>
-                            <span>+</span>
+                        <button class="faq-trigger" type="button">
+                            <span data-i18n="faq1Q">Do you do both development and design?</span>
+                            <span class="faq-icon mono">+</span>
                         </button>
                         <div class="faq-content">
-                            <p data-i18n="faq1A">I build portfolio websites, UI pages, dashboard layouts, and practice
-                                projects using HTML, CSS, JavaScript, React, and TypeScript.</p>
+                            <p data-i18n="faq1A">Yes — that's the whole point. I can take a project from brand identity
+                                and UI design all the way to a deployed Next.js/React app, so nothing gets lost between
+                                designer and developer.</p>
                         </div>
                     </div>
                     <div class="faq-item reveal">
-                        <button class="faq-trigger">
-                            <span data-i18n="faq2Q">Are you available for collaboration?</span>
-                            <span>+</span>
+                        <button class="faq-trigger" type="button">
+                            <span data-i18n="faq2Q">Are you available for work?</span>
+                            <span class="faq-icon mono">+</span>
                         </button>
                         <div class="faq-content">
-                            <p data-i18n="faq2A">Yes. I am open to learning opportunities, collaborations, internships,
-                                and junior frontend work.</p>
+                            <p data-i18n="faq2A">Yes — I'm open to fullstack &amp; frontend roles, design projects,
+                                freelance and collaborations. Remote-friendly, and I reply fast on Telegram or
+                                WhatsApp.</p>
                         </div>
                     </div>
                     <div class="faq-item reveal">
-                        <button class="faq-trigger">
-                            <span data-i18n="faq3Q">Why does this portfolio have multiple languages?</span>
-                            <span>+</span>
+                        <button class="faq-trigger" type="button">
+                            <span data-i18n="faq3Q">What can you design for me?</span>
+                            <span class="faq-icon mono">+</span>
                         </button>
                         <div class="faq-content">
-                            <p data-i18n="faq3A">It shows localization skills and makes the website more useful for
-                                different audiences.</p>
+                            <p data-i18n="faq3A">Logos and full brand identity, UI/UX in Figma, print (business cards,
+                                posters, brochures), motion graphics in After Effects and 3D visuals in Blender.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item reveal">
+                        <button class="faq-trigger" type="button">
+                            <span data-i18n="faq4Q">Why is this site multilingual?</span>
+                            <span class="faq-icon mono">+</span>
+                        </button>
+                        <div class="faq-content">
+                            <p data-i18n="faq4A">It serves English, Russian and Tajik audiences — switchable instantly
+                                with no reload — and shows the localization work I care about as a developer.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- CONTACT -->
         <section class="section" id="contact">
             <div class="container">
                 <div class="cta-box reveal">
-                    <div>
-                        <h2 data-i18n="ctaTitle">Let’s build something strong</h2>
-                        <p data-i18n="ctaText">Send me a message if you want to discuss a project, collaboration,
-                            internship, or frontend opportunity.</p>
+                    <div class="cta-box__text">
+                        <span class="section__index mono">// 06</span>
+                        <h2 data-i18n="ctaTitle">let's work together</h2>
+                        <p data-i18n="ctaText">Have a project, a design job or an opportunity? Reach out on any channel
+                            below — I reply fast.</p>
+                        <div class="contact-methods">
+                            <a class="contact-method" href="mailto:muslimmelikzoda@gmail.com">
+                                <span class="contact-method__label mono">email</span>
+                                <span class="contact-method__value">muslimmelikzoda@gmail.com</span>
+                            </a>
+                            <a class="contact-method" href="https://t.me/MuslihiddinMelikzoda" target="_blank"
+                                rel="noopener">
+                                <span class="contact-method__label mono">telegram</span>
+                                <span class="contact-method__value">@MuslihiddinMelikzoda</span>
+                            </a>
+                            <a class="contact-method" href="https://wa.me/992003333991" target="_blank" rel="noopener">
+                                <span class="contact-method__label mono">whatsapp</span>
+                                <span class="contact-method__value">+992 00 3333 991</span>
+                            </a>
+                            <a class="contact-method" href="https://instagram.com/mel1kow.l8" target="_blank"
+                                rel="noopener">
+                                <span class="contact-method__label mono">instagram</span>
+                                <span class="contact-method__value">@mel1kow.l8</span>
+                            </a>
+                        </div>
                     </div>
                     <form class="contact-form" id="contactForm" novalidate>
-                        <input type="text" id="nameInput" placeholder="Your name" />
-                        <input type="email" id="emailInput" placeholder="Your email" />
-                        <textarea id="messageInput" rows="4" placeholder="Your message"></textarea>
-                        <button class="btn btn--primary" type="submit" data-i18n="sendMessage">Send Message</button>
+                        <label class="field">
+                            <span class="mono" data-i18n="formName">name</span>
+                            <input type="text" id="nameInput" autocomplete="name" />
+                            <small class="field-error" data-for="nameInput"></small>
+                        </label>
+                        <label class="field">
+                            <span class="mono" data-i18n="formEmail">email</span>
+                            <input type="email" id="emailInput" autocomplete="email" />
+                            <small class="field-error" data-for="emailInput"></small>
+                        </label>
+                        <label class="field">
+                            <span class="mono" data-i18n="formMessage">message</span>
+                            <textarea id="messageInput" rows="4"></textarea>
+                            <small class="field-error" data-for="messageInput"></small>
+                        </label>
+                        <button class="btn btn--primary" type="submit" data-i18n="sendMessage">send message</button>
                     </form>
                 </div>
             </div>
@@ -326,21 +582,23 @@
 
     <footer>
         <div class="container footer-inner">
-            <span data-i18n="footerLeft">© 2026 melikow.dev — modern multilingual frontend portfolio</span>
-            <span data-i18n="footerRight">Built with HTML, CSS, and JavaScript</span>
+            <span class="mono" data-i18n="footerLeft">© 2026 melikow.dev — code &amp; design, built from scratch</span>
+            <span class="mono" data-i18n="footerRight">Dushanbe, Tajikistan 🇹🇯</span>
         </div>
     </footer>
 
+    <!-- MODAL -->
     <div class="modal" id="projectModal">
         <div class="modal__overlay" id="modalOverlay"></div>
         <div class="modal__dialog">
-            <button class="modal__close" id="modalClose">✕</button>
+            <button class="modal__close" id="modalClose" aria-label="Close">✕</button>
             <img id="modalImage" src="" alt="Project preview" />
             <div class="modal__body">
                 <h3 id="modalTitle"></h3>
                 <p id="modalDescription"></p>
                 <div class="chip-list" id="modalTags"></div>
-                <a id="modalLink" class="btn btn--primary" href="#" target="_blank">Open GitHub</a>
+                <a id="modalLink" class="btn btn--primary" href="#" target="_blank" rel="noopener"
+                    data-i18n="openGithub">open on GitHub</a>
             </div>
         </div>
     </div>

@@ -1,9 +1,85 @@
 /* ============================================================
-   melikow.dev — portfolio logic (dev world + design world)
+   i18n dictionaries — EN / RU / TJ
    ============================================================ */
 
-/* ---------------- translations ---------------- */
-const translations = {
+export type Lang = "en" | "ru" | "tj";
+
+export interface Dict {
+  navAbout: string;
+  navSkills: string;
+  navProjects: string;
+  navDesign: string;
+  navFaq: string;
+  navContact: string;
+  eyebrow: string;
+  heroText: string;
+  viewProjects: string;
+  viewDesign: string;
+  contactMe: string;
+  stat1Text: string;
+  stat2Text: string;
+  stat3Text: string;
+  aboutTitle: string;
+  aboutP1: string;
+  aboutP2: string;
+  aboutP3: string;
+  skillsTitle: string;
+  skillsText: string;
+  lvlConfident: string;
+  lvlComfortable: string;
+  lvlLearning: string;
+  projectsTitle: string;
+  projectsText: string;
+  filterAll: string;
+  experienceTitle: string;
+  step1Title: string;
+  step1Text: string;
+  step2Title: string;
+  step2Text: string;
+  step3Title: string;
+  step3Text: string;
+  switchCmd: string;
+  switchFrom: string;
+  switchTo: string;
+  designEyebrow: string;
+  designTitle: string;
+  designLead: string;
+  dStat1: string;
+  dStat2: string;
+  dStat3Val: string;
+  dStat3: string;
+  designToolsTitle: string;
+  designWorksTitle: string;
+  designWorksLead: string;
+  mentorBadge: string;
+  mentorTitle: string;
+  mentorText: string;
+  faqTitle: string;
+  faq1Q: string;
+  faq1A: string;
+  faq2Q: string;
+  faq2A: string;
+  faq3Q: string;
+  faq3A: string;
+  faq4Q: string;
+  faq4A: string;
+  ctaTitle: string;
+  ctaText: string;
+  formName: string;
+  formEmail: string;
+  formMessage: string;
+  sendMessage: string;
+  openGithub: string;
+  footerLeft: string;
+  footerRight: string;
+  typed: string[];
+  toastSuccess: string;
+  errRequired: string;
+  errEmail: string;
+  errShort: string;
+}
+
+export const translations: Record<Lang, Dict> = {
   en: {
     navAbout: "about",
     navSkills: "skills",
@@ -47,11 +123,9 @@ const translations = {
     step3Title: "Fullstack & design in production",
     step3Text:
       "Shipping production apps with Next.js, TypeScript, Prisma and C++ — like Tuyona.tj — while crafting brand identities in Photoshop, Illustrator and Figma.",
-    // transition
     switchCmd: "compile --mode=design",
     switchFrom: "// end of engineering",
     switchTo: "entering the design studio",
-    // design world
     designEyebrow: "the other half — visual & brand",
     designTitle: "I don't just build products.<br>I design how they feel.",
     designLead:
@@ -68,7 +142,6 @@ const translations = {
     mentorTitle: "Design Mentor at Academy SoftClub",
     mentorText:
       "I teach the next generation of designers — from fundamentals and composition to real client work in Photoshop, Illustrator and Figma — while also building the academy's frontend. Two disciplines, one craft: making things that work and look great.",
-    // faq
     faqTitle: "faq",
     faq1Q: "Do you do both development and design?",
     faq1A:
@@ -82,7 +155,6 @@ const translations = {
     faq4Q: "Why is this site multilingual?",
     faq4A:
       "It serves English, Russian and Tajik audiences — switchable instantly with no reload — and shows the localization work I care about as a developer.",
-    // contact
     ctaTitle: "let's work together",
     ctaText:
       "Have a project, a design job or an opportunity? Reach out on any channel below — I reply fast.",
@@ -284,495 +356,3 @@ const translations = {
     errShort: "хеле кӯтоҳ",
   },
 };
-
-/* ---------------- dev projects data ---------------- */
-const projects = [
-  {
-    title: "Tuyona.tj",
-    description:
-      "My flagship — a production wedding marketplace for Tajikistan (venues, photographers, decorators). Next.js 16 App Router, TypeScript, Prisma + PostgreSQL, NextAuth, Tailwind, maps, image uploads, multi-language, deployed on Vercel.",
-    image:
-      "https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=1200&q=80",
-    tags: ["Next.js", "TypeScript", "Prisma", "PostgreSQL", "NextAuth"],
-    category: "fullstack",
-    link: "https://tuyona.tj",
-    cta: "open live site",
-  },
-  {
-    title: "CRM Dashboard",
-    description:
-      "A CRM admin dashboard built with Next.js and TypeScript — data tables, auth, and a clean, responsive management UI.",
-    image:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80",
-    tags: ["Next.js", "TypeScript", "Dashboard"],
-    category: "fullstack",
-    link: "https://github.com/Melikzoda-Muslihiddin/CRM-system",
-  },
-  {
-    title: "Fast-Cart",
-    description:
-      "My first big React e-commerce project — product catalog, cart logic, state management and a polished shopping UI.",
-    image:
-      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1200&q=80",
-    tags: ["React", "TypeScript", "E-commerce"],
-    category: "frontend",
-    link: "https://github.com/Melikzoda-Muslihiddin/Fast-Cart",
-  },
-  {
-    title: "AI-Job",
-    description:
-      "An AI-powered job platform interface built in React + TypeScript with API integration and a modern, responsive layout.",
-    image:
-      "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1200&q=80",
-    tags: ["React", "TypeScript", "Axios", "AI"],
-    category: "frontend",
-    link: "https://github.com/Melikzoda-Muslihiddin/Ai-Job",
-  },
-  {
-    title: "Instagram Prototype",
-    description:
-      "A social-feed prototype built with Next.js and TypeScript — feed, posts and an Instagram-style responsive interface.",
-    image:
-      "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&w=1200&q=80",
-    tags: ["Next.js", "TypeScript", "UI"],
-    category: "frontend",
-    link: "https://github.com/Melikzoda-Muslihiddin/Istagram-prototype",
-  },
-];
-
-const techStack = [
-  "Next.js", "React", "TypeScript", "JavaScript", "C++", "Node.js", "Prisma",
-  "PostgreSQL", "NextAuth", "Tailwind CSS", "Redux", "Zustand", "shadcn/ui",
-  "REST API", "Git", "Vercel",
-];
-
-/* ---------------- design tools data ---------------- */
-const designTools = [
-  { name: "Photoshop", tag: "Ps", level: 95, use: "photo · retouch · composites" },
-  { name: "Illustrator", tag: "Ai", level: 90, use: "logos · vector · icons" },
-  { name: "CorelDRAW", tag: "Cdr", level: 92, use: "print · layout · vector" },
-  { name: "After Effects", tag: "Ae", level: 80, use: "motion · animation" },
-  { name: "Figma", tag: "Fig", level: 90, use: "ui/ux · prototypes" },
-  { name: "Blender", tag: "Bl", level: 70, use: "3d · modeling · render" },
-  { name: "Canva", tag: "Cv", level: 95, use: "fast social · templates" },
-  { name: "Office Suite", tag: "Off", level: 90, use: "docs · slides · sheets" },
-];
-
-/* ---------------- design works data ---------------- */
-const designWorks = [
-  {
-    title: "SoftClub — Brand Identity",
-    tag: "Branding",
-    image:
-      "https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=1000&q=80",
-  },
-  {
-    title: "Print & Business Cards",
-    tag: "Print",
-    image:
-      "https://images.unsplash.com/photo-1572044162444-ad60f128bdea?auto=format&fit=crop&w=1000&q=80",
-  },
-  {
-    title: "Poster & Visual Series",
-    tag: "Graphic",
-    image:
-      "https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=1000&q=80",
-  },
-  {
-    title: "UI / UX Concepts",
-    tag: "Figma",
-    image:
-      "https://images.unsplash.com/photo-1545235617-9465d2a55698?auto=format&fit=crop&w=1000&q=80",
-  },
-  {
-    title: "3D & Motion",
-    tag: "Blender · Ae",
-    image:
-      "https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?auto=format&fit=crop&w=1000&q=80",
-  },
-  {
-    title: "Logo Marks",
-    tag: "Identity",
-    image:
-      "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=1000&q=80",
-  },
-];
-
-/* ---------------- element refs ---------------- */
-const $ = (sel) => document.querySelector(sel);
-const $$ = (sel) => document.querySelectorAll(sel);
-
-const projectsGrid = $("#projectsGrid");
-const filterButtons = $$(".filter-btn");
-const langButtons = $$(".lang-btn");
-const themeToggle = $("#themeToggle");
-const themeIcon = $("#themeIcon");
-const burger = $("#burger");
-const mobilePanel = $("#mobilePanel");
-const navbar = $("#navbar");
-const progressBar = $("#progressBar");
-const modal = $("#projectModal");
-const modalClose = $("#modalClose");
-const modalOverlay = $("#modalOverlay");
-const modalImage = $("#modalImage");
-const modalTitle = $("#modalTitle");
-const modalDescription = $("#modalDescription");
-const modalTags = $("#modalTags");
-const modalLink = $("#modalLink");
-const contactForm = $("#contactForm");
-const toastContainer = $("#toastContainer");
-const techChips = $("#techChips");
-const designToolsGrid = $("#designTools");
-const designGallery = $("#designGallery");
-
-let currentLang = localStorage.getItem("site-language") || "en";
-
-/* ---------------- toast ---------------- */
-function showToast(message) {
-  const toast = document.createElement("div");
-  toast.className = "toast";
-  toast.textContent = message;
-  toastContainer.appendChild(toast);
-  setTimeout(() => toast.remove(), 3000);
-}
-
-/* ---------------- i18n ---------------- */
-function applyTranslations(lang) {
-  currentLang = lang;
-  const dict = translations[lang] || translations.en;
-
-  $$("[data-i18n]").forEach((el) => {
-    const key = el.getAttribute("data-i18n");
-    if (dict[key] !== undefined) el.innerHTML = dict[key];
-  });
-
-  langButtons.forEach((btn) =>
-    btn.classList.toggle("active", btn.dataset.lang === lang),
-  );
-
-  document.documentElement.lang = lang === "tj" ? "tg" : lang;
-  localStorage.setItem("site-language", lang);
-  startTyping(); // restart typing with new language
-}
-
-langButtons.forEach((btn) => {
-  btn.addEventListener("click", () => applyTranslations(btn.dataset.lang));
-});
-
-/* ---------------- theme ---------------- */
-function applyTheme(theme) {
-  const isLight = theme === "light";
-  document.body.classList.toggle("light", isLight);
-  if (themeIcon) themeIcon.textContent = isLight ? "◑" : "◐";
-  localStorage.setItem("site-theme", theme);
-}
-themeToggle.addEventListener("click", () => {
-  const next = document.body.classList.contains("light") ? "dark" : "light";
-  applyTheme(next);
-});
-
-/* ---------------- typing animation ---------------- */
-let typeTimer = null;
-function startTyping() {
-  const el = $("#typed");
-  if (!el) return;
-  if (typeTimer) clearTimeout(typeTimer);
-
-  const phrases = (translations[currentLang] || translations.en).typed;
-  let pi = 0;
-  let ci = 0;
-  let deleting = false;
-
-  function tick() {
-    const word = phrases[pi];
-    el.textContent = word.slice(0, ci);
-
-    if (!deleting && ci < word.length) {
-      ci++;
-      typeTimer = setTimeout(tick, 65);
-    } else if (!deleting && ci === word.length) {
-      deleting = true;
-      typeTimer = setTimeout(tick, 1600);
-    } else if (deleting && ci > 0) {
-      ci--;
-      typeTimer = setTimeout(tick, 30);
-    } else {
-      deleting = false;
-      pi = (pi + 1) % phrases.length;
-      typeTimer = setTimeout(tick, 200);
-    }
-  }
-  tick();
-}
-
-/* ---------------- dev projects render + filter ---------------- */
-function renderProjects(filter = "all") {
-  const list =
-    filter === "all"
-      ? projects
-      : projects.filter((p) => p.category === filter);
-
-  projectsGrid.innerHTML = list
-    .map(
-      (p, i) => `
-    <article class="card project reveal stagger-item" style="--i:${i}">
-      <div class="project__image">
-        <img src="${p.image}" alt="${p.title}" loading="lazy" />
-      </div>
-      <div class="project__body">
-        <h3>${p.title}</h3>
-        <p>${p.description}</p>
-        <div class="tags">
-          ${p.tags.map((t) => `<span class="tag">${t}</span>`).join("")}
-        </div>
-        <button class="project__link open-project"
-          data-title="${p.title}"
-          data-description="${p.description}"
-          data-image="${p.image}"
-          data-link="${p.link}"
-          data-cta="${p.cta || ""}"
-          data-tags='${JSON.stringify(p.tags)}'>→ view details</button>
-      </div>
-    </article>`,
-    )
-    .join("");
-
-  observeReveals();
-  bindProjectButtons();
-}
-
-function bindProjectButtons() {
-  $$(".open-project").forEach((btn) => {
-    btn.addEventListener("click", () => {
-      modalImage.src = btn.dataset.image;
-      modalTitle.textContent = btn.dataset.title;
-      modalDescription.textContent = btn.dataset.description;
-      modalLink.href = btn.dataset.link;
-      const dict = translations[currentLang] || translations.en;
-      modalLink.textContent = btn.dataset.cta || dict.openGithub;
-      const tags = JSON.parse(btn.dataset.tags || "[]");
-      modalTags.innerHTML = tags.map((t) => `<span>${t}</span>`).join("");
-      modal.classList.add("open");
-      document.body.classList.add("nav-open");
-    });
-  });
-}
-
-filterButtons.forEach((btn) => {
-  btn.addEventListener("click", () => {
-    filterButtons.forEach((b) => b.classList.remove("active"));
-    btn.classList.add("active");
-    renderProjects(btn.dataset.filter);
-  });
-});
-
-/* ---------------- modal ---------------- */
-function closeModal() {
-  modal.classList.remove("open");
-  document.body.classList.remove("nav-open");
-}
-modalClose.addEventListener("click", closeModal);
-modalOverlay.addEventListener("click", closeModal);
-document.addEventListener("keydown", (e) => {
-  if (e.key === "Escape") closeModal();
-});
-
-/* ---------------- tech chips ---------------- */
-function renderTechChips() {
-  if (!techChips) return;
-  techChips.innerHTML = techStack
-    .map((t) => `<span>${t}</span>`)
-    .join("");
-}
-
-/* ---------------- design tools render ---------------- */
-function renderDesignTools() {
-  if (!designToolsGrid) return;
-  designToolsGrid.innerHTML = designTools
-    .map(
-      (t, i) => `
-    <article class="d-tool reveal stagger-item" style="--i:${i}">
-      <div class="d-tool__top">
-        <span class="d-tool__badge">${t.tag}</span>
-        <span class="d-tool__pct">${t.level}%</span>
-      </div>
-      <h4 class="d-tool__name">${t.name}</h4>
-      <p class="d-tool__use">${t.use}</p>
-      <div class="d-tool__bar"><span style="--w:${t.level}%"></span></div>
-    </article>`,
-    )
-    .join("");
-  observeReveals();
-}
-
-/* ---------------- design gallery render ---------------- */
-function renderDesignGallery() {
-  if (!designGallery) return;
-  designGallery.innerHTML = designWorks
-    .map(
-      (w, i) => `
-    <figure class="d-work reveal stagger-item" style="--i:${i}">
-      <img src="${w.image}" alt="${w.title}" loading="lazy" />
-      <figcaption class="d-work__cap">
-        <span class="d-work__tag">${w.tag}</span>
-        <span class="d-work__title">${w.title}</span>
-      </figcaption>
-    </figure>`,
-    )
-    .join("");
-  observeReveals();
-}
-
-/* ---------------- reveal on scroll ---------------- */
-let revealObserver;
-function observeReveals() {
-  if (!revealObserver) {
-    revealObserver = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("show");
-            revealObserver.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.12, rootMargin: "0px 0px -40px 0px" },
-    );
-  }
-  $$(".reveal:not(.show)").forEach((el) => revealObserver.observe(el));
-}
-
-/* ---------------- counters ---------------- */
-function animateCounters() {
-  const counterObserver = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) return;
-        const counter = entry.target;
-        const target = +counter.dataset.target;
-        let current = 0;
-        const step = Math.max(1, Math.ceil(target / 30));
-        const update = () => {
-          current += step;
-          if (current >= target) {
-            counter.textContent = target;
-          } else {
-            counter.textContent = current;
-            requestAnimationFrame(update);
-          }
-        };
-        update();
-        counterObserver.unobserve(counter);
-      });
-    },
-    { threshold: 0.4 },
-  );
-  $$(".counter").forEach((c) => counterObserver.observe(c));
-}
-
-/* ---------------- faq accordion ---------------- */
-$$(".faq-trigger").forEach((trigger) => {
-  trigger.addEventListener("click", () => {
-    const item = trigger.closest(".faq-item");
-    const isOpen = item.classList.contains("open");
-    $$(".faq-item").forEach((i) => i.classList.remove("open"));
-    if (!isOpen) item.classList.add("open");
-  });
-});
-
-/* ---------------- navbar + progress on scroll ---------------- */
-const sections = [...$$("main section[id]")];
-const navAnchors = [...$$("#desktopNav a")];
-
-function onScroll() {
-  const scrollTop = window.scrollY;
-  const docHeight = document.body.scrollHeight - window.innerHeight;
-  progressBar.style.width = `${(scrollTop / docHeight) * 100}%`;
-
-  navbar.classList.toggle("scrolled", scrollTop > 10);
-
-  // toggle design-mode styling on navbar when inside the design world
-  const designWorld = $(".design-world");
-  const faq = $("#faq");
-  if (designWorld && faq) {
-    const inDesign =
-      scrollTop >= designWorld.offsetTop - 90 &&
-      scrollTop < faq.offsetTop - 90;
-    navbar.classList.toggle("nav-design-mode", inDesign);
-  }
-
-  // active link
-  let activeId = "";
-  for (const sec of sections) {
-    if (scrollTop >= sec.offsetTop - 120) activeId = sec.id;
-  }
-  navAnchors.forEach((a) =>
-    a.classList.toggle("active", a.getAttribute("href") === `#${activeId}`),
-  );
-}
-window.addEventListener("scroll", onScroll, { passive: true });
-
-/* ---------------- burger menu ---------------- */
-burger.addEventListener("click", () => mobilePanel.classList.toggle("open"));
-$$("#mobilePanel a").forEach((a) =>
-  a.addEventListener("click", () => mobilePanel.classList.remove("open")),
-);
-
-/* ---------------- contact form validation ---------------- */
-function setError(input, msg) {
-  input.classList.add("error");
-  const small = contactForm.querySelector(`[data-for="${input.id}"]`);
-  if (small) small.textContent = msg;
-}
-function clearError(input) {
-  input.classList.remove("error");
-  const small = contactForm.querySelector(`[data-for="${input.id}"]`);
-  if (small) small.textContent = "";
-}
-
-contactForm.addEventListener("submit", (e) => {
-  e.preventDefault();
-  const dict = translations[currentLang] || translations.en;
-  const name = $("#nameInput");
-  const email = $("#emailInput");
-  const message = $("#messageInput");
-  let ok = true;
-
-  [name, email, message].forEach(clearError);
-
-  if (!name.value.trim()) {
-    setError(name, dict.errRequired);
-    ok = false;
-  }
-  if (!email.value.trim()) {
-    setError(email, dict.errRequired);
-    ok = false;
-  } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value.trim())) {
-    setError(email, dict.errEmail);
-    ok = false;
-  }
-  if (!message.value.trim()) {
-    setError(message, dict.errRequired);
-    ok = false;
-  } else if (message.value.trim().length < 10) {
-    setError(message, dict.errShort);
-    ok = false;
-  }
-
-  if (ok) {
-    showToast(dict.toastSuccess);
-    contactForm.reset();
-  }
-});
-
-/* ---------------- init ---------------- */
-const savedTheme = localStorage.getItem("site-theme") || "dark";
-applyTheme(savedTheme);
-applyTranslations(currentLang);
-renderProjects();
-renderTechChips();
-renderDesignTools();
-renderDesignGallery();
-observeReveals();
-animateCounters();
-onScroll();
